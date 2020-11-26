@@ -1,7 +1,9 @@
 <template>
-    <div>
+    <div class="blockSkill">
         <label :for="label">{{ label }}</label>
-        <progress :id="label" :value="progress" max="100"></progress>
+        <div class="progress">
+            <div class="progress-bar progress" role="progressbar" :style="progress" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
     </div>
 </template>
 
@@ -13,5 +15,9 @@ export default {
 </script>
 
 <style>
+
+.blockSkill{
+    padding: 1%;
+}
 
 </style>

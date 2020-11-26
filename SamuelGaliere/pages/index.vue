@@ -4,109 +4,113 @@
       <h2 class="subtitle">Bonjour, je me présente,</h2>
       <h1 class="title">Samuel GALIERE</h1>
       <h2 id="job" class="subtitle"> je suis développeur.</h2>
-      <button type="button" class="btn btn-primary buttonContact" onClick="window.open('https://www.youtube.com/watch?v=D8KxdXEBkhw', '__blank')">Contactez-moi</button>
       <img id="backgroundImage" src="../images/background.jpg"/>
+      <Contact />
     </div>
-    <div>
+  <div>
       
-      <br>
+    <br>
 
-      <DescriptionBlock class="descriptionBlock" id="profil"
-      titre="Mon Profil"
-      contenu=" fesihf leishfg leskjfeheslmki gfiuhg fugs iofuge zuifgeuisgfoiuesg fuiegs fiuog sipufg oeisuf goisu gfiougs fioug isugfiouseg fiugs ifujg esiugf ieusg fiuse fusip fiuesgh ofuiesg foiuegfousgf ouesgofu ysgfu gsofeuiyges ufsgefouysegfuysgepfiu siuef pesf uges foiusefg epius goifugh soiug oiugjfh elskfjh "/>
-      
-      <DescriptionBlock class="descriptionBlock" id="lookingFor"
-      titre="Ce que je cherche"
-      contenu="gzpifuzpifu g zpuig fpizug efpiuezg pifg g zpiefug zfug zpifu ghfg leskjfeheslmkjfh elskfjh "/>
+    <DescriptionBlock class="descriptionBlock" id="profil"
+    titre="Mon Profil"
+    contenu=" fesihf leishfg leskjfeheslmki gfiuhg fugs iofuge zuifgeuisgfoiuesg fuiegs fiuog sipufg oeisuf goisu gfiougs fioug isugfiouseg fiugs ifujg esiugf ieusg fiuse fusip fiuesgh ofuiesg foiuegfousgf ouesgofu ysgfu gsofeuiyges ufsgefouysegfuysgepfiu siuef pesf uges foiusefg epius goifugh soiug oiugjfh elskfjh "/>
+    
+    <DescriptionBlock class="descriptionBlock" id="lookingFor"
+    titre="Ce que je cherche"
+    contenu="gzpifuzpifu g zpuig fpizug efpiuezg pifg g zpiefug zfug zpifu ghfg leskjfeheslmkjfh elskfjh "/>
 
-      <br>
+    <br>
 
+  </div>
+  <div class="blockSovietique">
+    <h3 class="baliseExperience">Expérience Profesionnelle</h3>
+    <Experience
+    nomEntreprise="Bhales"
+    logoEntreprise="../images/firefox-nouveau-logo-770.jpg"
+    ExperienceTitre="Stage de Troisième"
+    date="12/12/1222"
+    description="ikerhfghemoihfeosutfpsiuf yuioeg oufyige fuoig oisufgeosiuf gouiyesyg fouisgefuipges fouigs ouyfeg sougf ouiesg oifpugs oufg esouifg souif geoyug jgiugfesofhesiufgsfeihe"/>
+    <Experience
+    nomEntreprise="Bhales"
+    logoEntreprise="../images/firefox-nouveau-logo-770.jpg"
+    ExperienceTitre="Stage de Troisième"
+    date="12/12/1222"
+    description="ikerhfghemoihfeosutfpsiuf yuioeg oufyige fuoig oisufgeosiuf gouiyesyg fouisgefuipges fouigs ouyfeg sougf ouiesg oifpugs oufg esouifg souif geoyug jgiugfesofhesiufgsfeihe"/>
+
+    <h3 class="baliseExperience">Diplômes</h3>
+    <Experience
+    nomEntreprise="Thales"
+    logoEntreprise="www.uigrezuyrfgz.fr"
+    ExperienceTitre="Stage de Troisième"
+    date="12/12/1222"
+    description="ikerhfghemoihfeosutfpsiuf yuioeg oufyige fuoig oisufgeosiuf gouiyesyg fouisgefuipges fouigs ouyfeg sougf ouiesg oifpugs oufg esouifg souif geoyug jgiugfesofhesiufgsfeihe"/>
+    <Experience
+    nomEntreprise="Thales"
+    logoEntreprise="www.uigrezuyrfgz.fr"
+    ExperienceTitre="Stage de Troisième"
+    date="12/12/1222"
+    description="ikerhfghemoihfeosutfpsiuf yuioeg oufyige fuoig oisufgeosiuf gouiyesyg fouisgefuipges fouigs ouyfeg sougf ouiesg oifpugs oufg esouifg souif geoyug jgiugfesofhesiufgsfeihe"/>
+    <Experience
+    nomEntreprise="Thales"
+    logoEntreprise="www.uigrezuyrfgz.fr"
+    ExperienceTitre="Stage de Troisième"
+    date="12/12/1222"
+    description="ikerhfghemoihfeosutfpsiuf yuioeg oufyige fuoig oisufgeosiuf gouiyesyg fouisgefuipges fouigs ouyfeg sougf ouiesg oifpugs oufg esouifg souif geoyug jgiugfesofhesiufgsfeihe"/>
+  </div>
+  <div>
+    <h3 class="baliseExperience" id="skills">Compétences Techniques</h3>
+    <div class="blockColomn">
+      <Skill
+      label="testest"
+      progress="50"/>
+      <Skill
+      label="testest"
+      progress="50"/>
+      <Skill
+      label="testest"
+      progress="50"/>
+      <Skill
+      label="testest"
+      progress="50"/>
     </div>
+
+    <div class="blockColomn">
+      <Skill
+      label="Python"
+      progress="width: 50%"/>
+      <Skill
+      label="HTML5"
+      progress="50"/>
+      <Skill
+      label="testest"
+      progress="50"/>
+    </div>
+  </div>
     <div class="blockSovietique">
-      <Experience
-      nomEntreprise="Bhales"
-      logoEntreprise="../images/firefox-nouveau-logo-770.jpg"
-      ExperienceTitre="Stage de Troisième"
-      date="12/12/1222"
-      description="ikerhfghemoihfeosutfpsiuf yuioeg oufyige fuoig oisufgeosiuf gouiyesyg fouisgefuipges fouigs ouyfeg sougf ouiesg oifpugs oufg esouifg souif geoyug jgiugfesofhesiufgsfeihe"/>
-      <Experience
-      nomEntreprise="Thales"
-      logoEntreprise="www.uigrezuyrfgz.fr"
-      ExperienceTitre="Stage de Troisième"
-      date="12/12/1222"
-      description="ikerhfghemoihfeosutfpsiuf yuioeg oufyige fuoig oisufgeosiuf gouiyesyg fouisgefuipges fouigs ouyfeg sougf ouiesg oifpugs oufg esouifg souif geoyug jgiugfesofhesiufgsfeihe"/>
-      <Experience
-      nomEntreprise="Thales"
-      logoEntreprise="www.uigrezuyrfgz.fr"
-      ExperienceTitre="Stage de Troisième"
-      date="12/12/1222"
-      description="ikerhfghemoihfeosutfpsiuf yuioeg oufyige fuoig oisufgeosiuf gouiyesyg fouisgefuipges fouigs ouyfeg sougf ouiesg oifpugs oufg esouifg souif geoyug jgiugfesofhesiufgsfeihe"/>
-      <Experience
-      nomEntreprise="Thales"
-      logoEntreprise="www.uigrezuyrfgz.fr"
-      ExperienceTitre="Stage de Troisième"
-      date="12/12/1222"
-      description="ikerhfghemoihfeosutfpsiuf yuioeg oufyige fuoig oisufgeosiuf gouiyesyg fouisgefuipges fouigs ouyfeg sougf ouiesg oifpugs oufg esouifg souif geoyug jgiugfesofhesiufgsfeihe"/>
-    </div>
-    <div>
-      <Skill
-      label="testest"
-      progress="50"/>
-      <Skill
-      label="testest"
-      progress="50"/>
-      <Skill
-      label="testest"
-      progress="50"/>
-      <Skill
-      label="testest"
-      progress="50"/>
-      <Skill
-      label="testest"
-      progress="50"/>
-      <Skill
-      label="testest"
-      progress="50"/>
-      <Skill
-      label="testest"
-      progress="50"/>
-    </div>
-      <div class="blockSovietique">
-        <div>
-        <FormulaireContact/>
+      <br><br><br><br><br>
+      <h3 id="titleFooter" class="footerColomn">Je suis disponible !</h3>
+      <div class="footerColomn">
+        <h4 class="footerColomn">Social</h4>
+        <h4 id="contactColomn" class="footerColomn">Contacts</h4>
       </div>
-      <div>
-        <RSContact
-        icon="www.faceuibefoê.com"
-        accountLink="https://www.google.fr/"
-        accountName="Samuel GALIERE"/>
-        <RSContact
-        icon="www.faceuibefoê.com"
-        accountLink="https://www.google.fr/"
-        accountName="Samuel GALIERE"/>
-        <RSContact
-        icon="www.faceuibefoê.com"
-        accountLink="https://www.google.fr/"
-        accountName="Samuel GALIERE"/>
-      </div>
+      <br><br><br><br><br>
     </div>
   </div>
 </template>
 
 <script>
+import Contact from '../components/Contact.vue'
 import DescriptionBlock from '../components/DescriptionBlock.vue'
 import Experience from '../components/Experience.vue'
-import FormulaireContact from '../components/FormulaireContact.vue'
-import RSContact from '../components/RSContact.vue'
 import Skill from '../components/Skill.vue'
 
 export default {
-  components: { DescriptionBlock, Experience, Skill, FormulaireContact, RSContact },
+  components: { DescriptionBlock, Experience, Skill, Contact },
   head: {
     link: [
       {
         rel: 'stylesheet',
-        href: 'https://bootswatch.com/4/darkly/bootstrap.min.css'
+        href: 'https://bootswatch.com/4/darkly/bootstrap.css'
       }
     ]
   }
@@ -176,14 +180,28 @@ export default {
   margin-top: 0.2%;
 }
 
+.baliseExperience{
+  position: relative;
+  text-align: left;
+  left: 20.4%;
+}
+
 .blockSovietique {
   background-color: rgba(255, 255, 255, 0.301);
 }
 
-.buttonContact{
-  position: absolute;
-  top: 40%;
-  left: 22%;
+#skills{
+  padding: 1%;
 }
+
+.footerColomn{
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  padding: 0.5%;
+  width: 30%;
+}
+
+
 
 </style>

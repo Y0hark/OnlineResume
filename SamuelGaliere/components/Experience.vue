@@ -1,10 +1,10 @@
 <template>
     <div>
-        <div class="blockExperience">
+        <div class="blockColomn">
             <h3>{{ nomEntreprise }}</h3>
             <img :src="logoEntreprise">
         </div>
-        <div class="blockExperience">
+        <div class="blockColomn">
             <h3>{{ ExperienceTitre }}</h3> <span> - {{ date }}</span>
             <p>{{ description }}</p>
         </div>
@@ -20,7 +20,7 @@ export default {
 
 
 <style>
-    .blockExperience{
+    .blockColomn{
         display: inline-block;
         text-align: left;
         position: relative;
