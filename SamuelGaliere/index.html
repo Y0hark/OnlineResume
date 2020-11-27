@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Samuel GALIERE</title>
+</head>
+<body>
+    <div class="header">
+        <h2>Bonjour ! Je suis </h2>
+        <h1>Samuel GALIERE</h1>
+        <h2>et je suis développeur.</h2>
+        <div class="contactBlock">
+            <form class="contactButton" action="mailto:samuelgaliere.pro@gmail.com"> <button type="submit" class="btn btn-primary">Mail</button> </form>
+            <button type="button" class="btn btn-primary contactButton" onClick="window.open('https://www.linkedin.com/in/samuel-galiere/', '_blank')">LinkedIn</button>
+            <button type="button" class="btn btn-primary contactButton" onClick="window.open('https://drive.google.com/file/d/15gXie4t8jI1cxd1JN4N44nOo5AQ6geyc/view?usp=sharing', '_blank')">C.V</button>
+        </div>
+    </div>
+    <div>
+        <div class="">
+            <h3 class="">Mon Profil</h3> 
+            <p>{{ contenu }}</p>
+        </div>
+        <div class="">
+            <h3 class="">Ce que je recherche</h3> 
+            <p>{{ contenu }}</p>
+        </div>
+        </div>
+        <div>
+        <h3 class="">Expérience Profesionnelle</h3>
+        <div class="">
+            <h3>{{ nomEntreprise }}</h3>
+            <img src="logoEntreprise">
+        </div>
+        <div class="">
+            <h3>{{ ExperienceTitre }}</h3> <span> - {{ date }}</span>
+            <p>{{ description }}</p>
+        </div>
+        </div>
+        <h3 class="baliseExperience">Diplômes</h3>
+        <div>
+        <div class="">
+            <h3>{{ nomEntreprise }}</h3>
+            <img src="logoEntreprise">
+        </div>
+        <div class="">
+            <h3>{{ ExperienceTitre }}</h3> <span> - {{ date }}</span>
+            <p>{{ description }}</p>
+        </div>
+    </div> 
+    <div>
+        <h3 class="baliseExperience" id="skills">Compétences Techniques</h3>
+        <div class="">
+            <label for="label">{{ label }}</label>
+            <div class="progress">
+                <div class="progress-bar progress" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+        <div class="">
+            <label for="label">{{ label }}</label>
+            <div class="progress">
+                <div class="progress-bar progress" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <br><br><br><br><br>
+        <div class="row">
+            <div id="" class="column">
+                <h3>Je suis disponible !</h3>
+            </div>
+            <div class="column">
+                <div class="column">
+                    <h4>Social</h4>
+                    <p><a target="_blanc" href="https://www.linkedin.com/in/samuel-galiere/">LinkedIn</a></p>
+                    <p><a target="_blank" href="https://github.com/Y0hark">GitHub</a></p>
+                </div>
+                <div class="column">
+                    <h4>Contacts</h4>
+                    <p><a href="mailto:samuelgaliere.pro@gmail.com">Mon Mail</a></p>
+                    <p><a href="tel:+33782567456">+33782567456</a></p>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br>
+    </div>
+    
+</body>
+</html>

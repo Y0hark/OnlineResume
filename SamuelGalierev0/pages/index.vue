@@ -1,5 +1,8 @@
 <template>
   <div class="containerD">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
     <div class="blockSovietique">
       <h2 class="subtitle">Bonjour, je me présente,</h2>
       <h1 class="title">Samuel GALIERE</h1>
@@ -88,10 +91,22 @@
   </div>
     <div class="blockSovietique">
       <br><br><br><br><br>
-      <h3 id="titleFooter" class="footerColomn">Je suis disponible !</h3>
-      <div class="footerColomn">
-        <h4 class="footerColomn">Social</h4>
-        <h4 id="contactColomn" class="footerColomn">Contacts</h4>
+      <div class="row">
+        <div id="titleFooter" class="column footerColomn">
+            <h3>Je suis disponible !</h3>
+        </div>
+        <div class="column footerColomn">
+          <div class="column footerColomn">
+            <h4>Social</h4>
+            <p><a target="_blanc" href="https://www.linkedin.com/in/samuel-galiere/">LinkedIn</a></p>
+            <p><a target="_blank" href="https://github.com/Y0hark">GitHub</a></p>
+          </div>
+          <div class="column footerColomn">
+              <h4>Contacts</h4>
+              <p><a href="mailto:samuelgaliere.pro@gmail.com">Mon Mail</a></p>
+              <p><a href="tel:+33782567456">+33782567456</a></p>
+          </div>
+        </div>
       </div>
       <br><br><br><br><br>
     </div>
@@ -197,9 +212,11 @@ export default {
 .footerColomn{
   display: inline-block;
   text-align: left;
+  left: 20.5%;
   position: relative;
   padding: 0.5%;
   width: 30%;
+  vertical-align: top;
 }
 
 
