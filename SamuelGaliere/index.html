@@ -1,91 +1,666 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.css">
-    <link rel="stylesheet" href="./style/main.css">
-    <title>Samuel GALIERE</title>
+    <title>Samuel Galiere - Mon C.V en ligne</title>
+    <meta content="This is Samuel GALIERE's online resume." name="descriptison">
+    <meta content="online resume samuel galiere" name="keywords">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
 </head>
-<body>
-    <div class="header">
-        <h2>Bonjour ! Je suis </h2>
-        <h1>Samuel GALIERE</h1>
-        <h2>et je suis développeur.</h2>
-        <div class="contactBlock">
-            <form class="contactButton" action="mailto:samuelgaliere.pro@gmail.com"> <button type="submit" class="btn btn-primary">Mail</button> </form>
-            <button type="button" class="btn btn-primary contactButton" onClick="window.open('https://www.linkedin.com/in/samuel-galiere/', '_blank')">LinkedIn</button>
-            <button type="button" class="btn btn-primary contactButton" onClick="window.open('https://drive.google.com/file/d/15gXie4t8jI1cxd1JN4N44nOo5AQ6geyc/view?usp=sharing', '_blank')">C.V</button>
+
+<body id="page-top">
+
+    <!-- ======= Header / Navbar ======= -->
+    <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll" href="#page-top">Samuel Galiere</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link js-scroll active" href="#page-top">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link js-scroll" href="#about">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link js-scroll" href="#experiences">Expériences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="#formation">Diplômes & Formations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="#hobbies">Loisirs</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link js-scroll" href="#contact">Contactez-moi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======= Intro Section ======= -->
+    <div id="introContainer" class="intro route bg-image" style="background-image: url(assets/img/background_top_intro.jpg)">
+        <div class="overlay-itro"></div>
+        <div class="intro-content display-table">
+        <div class="table-cell">
+            <div class="container">
+            <h1 class="intro-title mb-4">Bonjour ! Je suis Samuel Galiere.</h1>
+            <p class="intro-subtitle"><span class="text-slider-items">Etudiant en Informatique,Développeur Junior,Flexibilité,Innovation</span><strong class="text-slider"></strong></p>
+            <br><br>
+            <button id="btnCVDL" onclick="window.open('https:\/\/drive.google.com/file/d/15gXie4t8jI1cxd1JN4N44nOo5AQ6geyc/view?usp=sharing');" class="button button-a button-big button-rouded">Télécharger mon C.V</button>
+            </div>
+        </div>
         </div>
     </div>
-    <div>
-        <div class="">
-            <h3 class="">Mon Profil</h3> 
-            <p>{{ contenu }}</p>
-        </div>
-        <div class="">
-            <h3 class="">Ce que je recherche</h3> 
-            <p>{{ contenu }}</p>
-        </div>
-        </div>
-        <div>
-        <h3 class="">Expérience Profesionnelle</h3>
-        <div class="">
-            <h3>{{ nomEntreprise }}</h3>
-            <img src="logoEntreprise">
-        </div>
-        <div class="">
-            <h3>{{ ExperienceTitre }}</h3> <span> - {{ date }}</span>
-            <p>{{ description }}</p>
-        </div>
-        </div>
-        <h3 class="baliseExperience">Diplômes</h3>
-        <div>
-        <div class="">
-            <h3>{{ nomEntreprise }}</h3>
-            <img src="logoEntreprise">
-        </div>
-        <div class="">
-            <h3>{{ ExperienceTitre }}</h3> <span> - {{ date }}</span>
-            <p>{{ description }}</p>
-        </div>
-    </div> 
-    <div>
-        <h3 class="baliseExperience" id="skills">Compétences Techniques</h3>
-        <div class="">
-            <label for="label">{{ label }}</label>
-            <div class="progress">
-                <div class="progress-bar progress" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-        <div class="">
-            <label for="label">{{ label }}</label>
-            <div class="progress">
-                <div class="progress-bar progress" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        </div>
-    </div>
-    <div>
-        <br><br><br><br><br>
-        <div class="row">
-            <div id="" class="column">
-                <h3>Je suis disponible !</h3>
-            </div>
-            <div class="column">
-                <div class="column">
-                    <h4>Social</h4>
-                    <p><a target="_blanc" href="https://www.linkedin.com/in/samuel-galiere/">LinkedIn</a></p>
-                    <p><a target="_blank" href="https://github.com/Y0hark">GitHub</a></p>
+    <!-- End Intro Section -->
+
+    <main id="mainContainer">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about-mf sect-pt4 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-sm-6 col-md-5">
+                        <div class="about-img">
+                          <img src="assets/img/Iprofile_pic.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-7">
+                        <div class="about-info">
+                            <p><span class="title-s">Nom: </span> <span>Samuel Galiere</span></p>
+                            <p><span class="title-s">Profil: </span> <span>étudiant développeur junior</span></p>
+                            <p><span class="title-s">Email: </span> <span>samuelgaliere.pro@gmail.com</span></p>
+                            <p><span class="title-s">Portable: </span> <span>+33 7 82 56 74 56</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-mf">
+                        <p class="title-s">Skills</p>
+                        <span>HTML5</span> <span class="pull-right">70%</span>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span>PHP</span> <span class="pull-right">60%</span>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span>SYMFONY</span> <span class="pull-right">50%</span>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span>JAVASCRIPT</span> <span class="pull-right">65%</span>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span>JAVA</span> <span class="pull-right">30%</span>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span>PYTHON</span> <span class="pull-right">50%</span>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span>GESTION DE PROJET</span> <span class="pull-right">40%</span>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span>C#</span> <span class="pull-right">40%</span>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span>UX/UI</span> <span class="pull-right">60%</span>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span>ANGLAIS</span> <span class="pull-right">80%</span>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="about-me pt-4 pt-md-0">
+                      <div class="title-box-2">
+                        <h5 class="title-left">
+                          A propos de moi
+                        </h5>
+                      </div>
+                      <p class="lead personalIntroduction">
+                        Etudiant en informatique à l'EMD de Marseille, je vais sur la validation de ma troisième année après le Bac.
+                        Je suis passionné et impliqué dans tout ce que j'entreprends. De même je suis autonome, curieux et rigoureux dans mon travail et j'aime apprendre de 
+                        nouvelles compétences. Dynamique, j'ai déjà eu à faire à une expérience en mode start-up, ainsi le travail ne me fait pas peur et la collaboration
+                        en équipe m'est familière. Discret et empathique, la diplomatie m'est spontanée. 
+                      </p>
+                      <div class="title-box-2">
+                        <h5 class="title-left">
+                          Je recherche un stage
+                        </h5>
+                      </div>
+                      <p class="lead personalIntroduction">
+                        Je recherche un stage dans l'informatique à partir d'Avril 2021.
+                        Mes disponibilités sont sur Marseille et autour de la ville, bien que les arrondissements 10, 11 et 12 m'offrent une proximité confortable pour 
+                        des déplacements moins longs.
+                        La durée du stage sera idéalement d'un mois pour faire office de période d'essai avant l'alternance. Le sujet du stage n'est pas imposé,
+                        il doit seulement être lié à l'informatique.
+                      </p>
+                      <div class="title-box-2">
+                        <h5 class="title-left">
+                          Je recherche une alternance
+                        </h5>
+                      </div>
+                      <p class="lead personalIntroduction">
+                        Après mon stage de fin d'année, je recherche une alternance dans l'informatique pour Mai-Juin 2021.
+                        Mes disponibilités géographiques sont identiques à celles du stage.
+                        La durée de cette alternance sera de deux ans, sans sujet imposé.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div class="column">
-                    <h4>Contacts</h4>
-                    <p><a href="mailto:samuelgaliere.pro@gmail.com">Mon Mail</a></p>
-                    <p><a href="tel:+33782567456">+33782567456</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- ======= Experiences Section ======= -->
+        <section id="experiences" class="services-mf pt-5 route">
+            <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                <div class="title-box text-center">
+                    <h3 class="title-a">
+                    Expériences
+                    </h3>
+                    <p class="subtitle-a">
+                        Un résumé de mes expériences professionnelles. 
+                        </p>
+                        <div class="line-mf"></div>
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                    <div class="experience-box">
+                        <div class="experience-ico">
+                            <span class="ico-circle"><i class="ion-code-working"></i></span>
+                        </div>
+                        <div class="experience-content">
+                        <h2 class="e-title">Stagiaire Développeur</h2>
+                        <h3 class="e-title-2">EDITAG - Meyreuil</h3>
+                        <h4 class="e-title-3">Juin 2020 - Septembre 2020</h4>
+                        <p class="e-description text-center">
+                            <b>Stage en 3D JavaScript.</b><br>
+                            Recherches sur différentes technologies 3D JavaScript 
+                            dans le but de mettre en place un POC 3D destiné à rendre compte de la meilleure technologie à adopter en 
+                            vue d’un potentiel passage d’un synoptique 2D vers un 3D.    
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                    <div class="experience-box">
+                        <div class="experience-ico">
+                        <span class="ico-circle"><i class="ion-clipboard"></i></span>
+                        </div>
+                        <div class="experience-content">
+                        <h2 class="e-title">Stagiaire CEO</h2>
+                        <h3 class="e-title-2">Gemalto/Thales DIS - La Ciotat</h3>
+                        <h4 class="e-title-3">Avril 2019 - Août 2019</h4>
+                        <p class="e-description text-center">
+                            <b>Stage à la R&D dans l’iOT.</b><br> 
+                            Expérience start-up dans les données privées. 
+                            Marketing, recherche des potentiels partenaires,
+                            rédaction de brevets, UX/UI, RGPD, PSD2, pitch...
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                    <div class="experience-box">
+                        <div class="experience-ico">
+                        <span class="ico-circle"><i class="ion-medkit"></i></span>
+                        </div>
+                        <div class="experience-content">
+                        <h2 class="e-title">Hydrothérapeute </h2>
+                        <h3 class="e-title-2">Centre Thermal - Bagnols les Bains</h3>
+                        <h4 class="e-title-3">Août 2018</h4>
+                        <p class="e-description text-center">
+                            <b>Mon job étudiant de l'été 2018.</b><br>
+                            Mise en place des divers appareils utilisés pour la cure thermale, surveillance des soins et assistance aux curistes.
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <!-- End Eperiences Section -->
+
+        <!-- ======= Formation Section ======= -->
+        <section id="formation" class="formation-mf pt-5 route">
+            <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                <div class="title-box text-center">
+                    <h3 class="title-a">
+                    Diplômes & Formations
+                    </h3>
+                    <p class="subtitle-a">
+                    L'ensemble des formations que j'ai suivies et diplômes obtenus.
+                    </p>
+                    <div class="line-mf"></div>
+                </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-4">
+                <div class="experience-box">
+                    <div class="experience-ico">
+                    <span class="ico-circle"><i class="ion-android-bookmark"></i></span>
+                    </div>
+                    <div class="experience-content">
+                    <h2 class="e-title">Ecole du Numérique</h2>
+                    <h3 class="e-title-2">EMD - Marseille</h3>
+                    <h4 class="e-title-3">Septembre 2018 - Aujourd'hui</h4>
+                    <p class="e-description text-center">
+                        <b>Formation à profil double Numérique/Management</b><br>
+                        Programmation, gestion de projet, éthique,
+                        le programme est vaste et riche.
+                    </p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                <div class="experience-box">
+                    <div class="experience-ico">
+                    <span class="ico-circle"><i class="ion-android-bookmark"></i></span>
+                    </div>
+                    <div class="experience-content">
+                    <h2 class="e-title">Anglais C1 - C2</h2>
+                    <h3 class="e-title-2">Inlingua - Edinbourgh</h3>
+                    <h4 class="e-title-3">Janvier 2020 - Mars 2020</h4>
+                    <p class="e-description text-center">
+                        <b>Cours d’anglais à l’étranger dans le but d’améliorer mon niveau global.</b><br>
+                        Un programme d'une trentaine d'heures de cours par semaine avec de l'expression écrite et orale couplée de visites guidées de la ville et des alentours.
+                    </p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                <div class="experience-box">
+                    <div class="experience-ico">
+                    <span class="ico-circle"><i class="ion-android-bookmark"></i></span>
+                    </div>
+                    <div class="experience-content">
+                    <h2 class="e-title">Baccalauréat</h2>
+                    <h3 class="e-title-2">Saint Pierre Saint Paul - Langogne</h3>
+                    <h4 class="e-title-3">Septembre 2015 - Juin 2018</h4>
+                    <p class="e-description text-center">
+                        <b>Obtention du Bac avec une mention Bien</b><br>
+                        Suivi d'un cycle lycée scientifique option Sciences de la vie et de la terre, spécialisation mathématiques.
+                    </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- End Formation Section -->
+
+        <!-- ======= Counter Section ======= -->
+        <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/background_top_intro.jpg)">
+            <div id="counterSection" class="overlay-mf"></div>
+            <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-lg-4">
+                <div class="counter-box counter-box pt-4 pt-md-0">
+                    <div class="counter-ico">
+                    <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
+                    </div>
+                    <div class="counter-num">
+                    <p class="counter">875</p>
+                    <span class="counter-text">SCORE TOEIC</span>
+                    </div>
+                </div>
+                </div>
+                <div class="col-sm-4 col-lg-4">
+                <div class="counter-box pt-4 pt-md-0">
+                    <div class="counter-ico">
+                    <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
+                    </div>
+                    <div class="counter-num">
+                    <p class="counter">42</p>
+                    <span class="counter-text">COURS COMPLÉTÉS</span>
+                    </div>
+                </div>
+                </div>
+                <div class="col-sm-4 col-lg-4">
+                <div class="counter-box pt-4 pt-md-0">
+                    <div class="counter-ico">
+                    <span class="ico-circle"><i class="ion-android-car"></i></span>
+                    </div>
+                    <div class="counter-num">
+                    <p class="letter">B</p>
+                    <span class="counter-text">PERMIS DE CONDUIRE</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
         </div>
-        <br><br><br><br><br>
-    </div>
+        <!-- End Counter Section -->
+
+        <!-- ======= Hobbies Section ======= -->
+        <section id="hobbies" class="hobbies-mf sect-pt4 route">
+            <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                <div class="title-box text-center">
+                    <h3 class="title-a">
+                    Loisirs
+                    </h3>
+                    <p class="subtitle-a">
+                    Le récap de ce à quoi j'apprécie donner de mon temps libre.
+                    </p>
+                    <div class="line-mf"></div>
+                </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                <div class="hobby-box">
+                    <a href="" class="venobox">
+                    <div class="hobby-img">
+                        <img src="assets/img/music_img.jpg" alt="" class="img-fluid">
+                    </div>
+                    </a>
+                    <div class="hobby-content">
+                    <div class="row">
+                        <div class="col-sm-8">
+                        <h2 class="h-title">Ecouter de la musique</h2>
+                        <div class="h-more">
+                            <span class="h-ctegory">Metal, Rap, Rock... <br> J'écoute de tout et tout le temps.</span>
+                        </div>
+                        </div>
+                        <div class="col-sm-4">
+                        <div class="h-like">
+                            <a href="https://www.youtube.com/watch?v=bw3UygAi2oo" target="_blank" title="Mon dernier coup de coeur!"> <span class="ion-ios-plus-outline"></span></a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                <div class="hobby-box">
+                    <a href="" class="venobox">
+                    <div class="hobby-img">
+                        <img src="assets/img/video_games.jpg" alt="" class="img-fluid">
+                    </div>
+                    </a>
+                    <div class="hobby-content">
+                    <div class="row">
+                        <div class="col-sm-8">
+                        <h2 class="h-title">Le jeu vidéo</h2>
+                        <div class="h-more">
+                            <span class="h-ctegory">Quelque soit le genre, j'apprécie le divertissement qu'ils offrent.</span>
+                        </div>
+                        </div>
+                        <div class="col-sm-4">
+                        <div class="h-like">
+                            <a href="https://www.wikiwand.com/en/The_Witcher_3:_Wild_Hunt" target="_blank" title="Le wiki de mon jeu actuel."> <span class="ion-ios-plus-outline"></span></a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                <div class="hobby-box">
+                    <a href=""  class="venobox">
+                    <div class="hobby-img">
+                        <img src="assets/img/bike.jpg" alt="" class="img-fluid">
+                    </div>
+                    </a>
+                    <div class="hobby-content">
+                    <div class="row">
+                        <div class="col-sm-8">
+                        <h2 class="h-title">Le VTT</h2>
+                        <div class="h-more">
+                            <span class="h-ctegory">Un de mes sports favoris, complet, je le pratique depuis tout jeune.</span>
+                        </div>
+                        </div>
+                        <div class="col-sm-4">
+                        <div class="h-like">
+                            <a href="https://www.wikiwand.com/fr/VTT_cross-country" target="_blank" title="Le wiki de mon style de VTT"> <span class="ion-ios-plus-outline"></span></a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                <div class="hobby-box">
+                    <a href=""  class="venobox">
+                    <div class="hobby-img">
+                        <img src="assets/img/coding.jpg" alt="" class="img-fluid">
+                    </div>
+                    </a>
+                    <div class="hobby-content">
+                    <div class="row">
+                        <div class="col-sm-8">
+                        <h2 class="h-title">Le codage</h2>
+                        <div class="h-more">
+                            <span class="h-ctegory">J'apprécie développer de petits projets personnels.</span>
+                        </div>
+                        </div>
+                        <div class="col-sm-4">
+                        <div class="h-like">
+                            <a href="https://github.com/Y0hark" target="_blank" title="Vers mon GitHub!"> <span class="ion-ios-plus-outline"></span></a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                <div class="hobby-box">
+                    <a href=""  class="venobox">
+                    <div class="hobby-img">
+                        <img src="assets/img/kyoto.jpg" alt="" class="img-fluid">
+                    </div>
+                    </a>
+                    <div class="hobby-content">
+                    <div class="row">
+                        <div class="col-sm-8">
+                        <h2 class="h-title">Les voyages</h2>
+                        <div class="h-more">
+                            <span class="h-ctegory">L'immersion dans les différentes cultures et paysages me fascine.</span>
+                        </div>
+                        </div>
+                        <div class="col-sm-4">
+                        <div class="h-like">
+                            <a href="https://goo.gl/maps/Musrr1fe52q74c1z8" target="_blank" title="Ma destination de rêve."> <span class="ion-ios-plus-outline"></span></a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                <div class="hobby-box">
+                    <a href=""  class="venobox">
+                    <div class="hobby-img">
+                        <img src="assets/img/reading.jpg" alt="" class="img-fluid">
+                    </div>
+                    </a>
+                    <div class="hobby-content">
+                    <div class="row">
+                        <div class="col-sm-8">
+                        <h2 class="h-title">Lecture</h2>
+                        <div class="h-more">
+                            <span class="h-ctegory">Heroic fantasy, manga, roman philosophiques, sont mes styles.</span>
+                        </div>
+                        </div>
+                        <div class="col-sm-4">
+                        <div class="h-like">
+                            <a href="https://www.wikiwand.com/fr/Chroniques_du_monde_%C3%A9merg%C3%A9" target="_blank" title="Ma série favorite."> <span class="ion-ios-plus-outline"></span></a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- End Hobbies Section -->
+
+        <!-- ======= Contact Section ======= -->
+        <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url()">
+            <div class="overlay-mf"></div>
+            <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                <div class="contact-mf">
+                    <div id="contact" class="box-shadow-full">
+                    <div class="row">
+                        <div class="col-md-6">
+                        <div class="title-box-2">
+                            <h5 class="title-left">
+                            Envoyez-moi un message!
+                            </h5>
+                        </div>
+                        <div>
+                            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                            <div class="row">
+                                <div class="col-md-12 mb-3">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Votre Nom" data-rule="minlen:4" data-msg="Au moins 4 caractères s'il vous plait." />
+                                    <div class="validate"></div>
+                                </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Votre E-mail" data-rule="email" data-msg="Entrez une adresse mail valide." />
+                                    <div class="validate"></div>
+                                </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Le sujet" data-rule="minlen:4" data-msg="Au moins 8 caractères pour le sujet." />
+                                    <div class="validate"></div>
+                                </div>
+                                </div>
+                                <div class="col-md-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Ecrivez-moi quelque chose" placeholder="Votre message..."></textarea>
+                                    <div class="validate"></div>
+                                </div>
+                                </div>
+                                <div class="col-md-12 text-center mb-3">
+                                <div class="loading">Chargement</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Votre message a bien été envoyé! Merci!</div>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                <button type="submit" class="button button-a button-big button-rouded">Envoyer</button>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                        <div class="title-box-2 pt-4 pt-md-0">
+                            <h5 class="title-left">
+                            Me retrouver
+                            </h5>
+                        </div>
+                        <div class="more-info">
+                            <p class="lead">
+                            Vous pouvez me joindre à n'importe quel moment via mon adresse mail, et je prendrai soin de vous répondre dans les plus brefs délais.
+                            Je suis également joignable en journée sur mon numéro de téléphone.
+                            Pour tout autres moyens de contact, veuillez s'il vous plait d'abord me joindre par mail ou téléphone.
+                            </p>
+                            <ul class="list-ico">
+                                <li><span class="ion-ios-telephone"></span> +33 7 82 56 74 56</li>
+                                <li><span class="ion-email"></span>samuelgaliere.pro@gmail.com</li>
+                            </ul>
+                        </div>
+                        <div class="socials">
+                            <ul>
+                                <li><a href="https://www.linkedin.com/in/samuel-galiere/" title="Mon profil LinkedIn!" target="_blank"><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
+                                <li><a href="https://drive.google.com/file/d/15gXie4t8jI1cxd1JN4N44nOo5AQ6geyc/view?usp=sharing" title="Télécharger mon C.V." target="_blank"><span class="ico-circle"><i class="ion-android-download"></i></span></a></li>
+                                <li><a href="https://github.com/Y0hark" title="Mon GitHub!" target="_blank"><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
     
+    <!-- ======= Footer ======= -->
+    <footer>
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+            <div class="copyright-box">
+                <div class="credits">
+                    
+                    Merci de votre visite! <br>
+                    Merci aussi à <a href="https://bootstrapmade.com">BootstrapMade</a> pour l'aide avec le template.
+
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- End  Footer -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/jquery.counterup.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
 </body>
 </html>
