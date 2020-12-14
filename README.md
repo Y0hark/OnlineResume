@@ -1,2 +1,2 @@
 # OnlineResume
-My online resume (Using NUXTJS)
+My online resume.
